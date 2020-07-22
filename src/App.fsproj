@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Types/*.fs" />
+    <Compile Include="Parsing/Parsec.fs" />
+    <Compile Include="Parsing/FormulaEvaluator.fs" />
+    <Compile Include="States.fs" />
+    <Compile Include="Events.fs" />
+    <Compile Include="Views.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
+    <PackageReference Include="Thoth.Json" Version="4.1.0" />
+  </ItemGroup>
+</Project>
